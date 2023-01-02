@@ -1,0 +1,314 @@
+/**********************************************************************************************************************/
+
+/* max-width: 1232px */
+
+/*********************************************************************************************************************/
+
+@media (max-width: 77em) {
+  html {
+    font-size: 56.25%;
+  }
+  .hero {
+    gap: 5rem;
+  }
+}
+
+/**********************************************************************************************************************/
+
+/* max-width: 1082px */
+
+/*********************************************************************************************************************/
+
+@media (max-width: 68em) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .hero {
+    gap: 1rem;
+  }
+
+  .upper-footer {
+    gap: 15rem;
+  }
+  .blog-grid .heading-tertionary,
+  .blog-grid .product-caption {
+    padding: 0 1rem;
+  }
+  .blog-grid .category-type {
+    padding: 1rem;
+  }
+}
+
+/**********************************************************************************************************************/
+
+/* max-width: 935px */
+
+/*********************************************************************************************************************/
+
+@media (max-width: 59em) {
+  .header {
+    padding: 1.8rem 4rem;
+  }
+  .hero {
+    grid-template-columns: 60fr 40fr;
+    padding: 7.6rem 0 7.6rem 4rem;
+  }
+  .section-products {
+    padding: 4rem;
+  }
+
+  .watches {
+    padding: 0 4rem;
+  }
+
+  .latest-blog {
+    padding: 4rem;
+  }
+
+  .brands {
+    padding: 4rem;
+  }
+
+  .footer-content {
+    padding: 4rem;
+  }
+}
+
+/**********************************************************************************************************************/
+
+/* max-width: 800px */
+
+/*********************************************************************************************************************/
+
+@media (max-width: 50em) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 5rem 0;
+  }
+
+  .hero-text-box {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text-box .btn {
+    align-self: center;
+  }
+
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img-box img {
+    width: 50%;
+  }
+
+  .categories {
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+  }
+
+  .card--float {
+    position: absolute;
+    top: 6.4rem;
+    width: calc(25% - 4rem + 8px);
+    height: calc(100% - 4rem);
+    transition: all 0.3s;
+  }
+
+  .best-this-month {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .special--card {
+    grid-column: 1/4;
+  }
+
+  .special-card-image {
+    text-align: center;
+  }
+
+  .special-card-image img {
+    width: 50%;
+  }
+
+  .wathces-grid {
+    margin-top: 3.5rem;
+  }
+
+  .upper-footer {
+    gap: 3.5rem;
+  }
+
+  .blog-grid {
+    position: relative;
+    padding-top: 3rem;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .blog-card-float {
+    position: absolute;
+    width: calc(50% - 4rem + 16px);
+    transition: all 0.3s;
+    bottom: 0;
+  }
+}
+
+/**********************************************************************************************************************/
+
+/* max-width: 592px */
+
+/*********************************************************************************************************************/
+
+@media (max-width: 37em) {
+  .card {
+    box-shadow: none;
+  }
+
+  .header {
+    padding: 1.8rem 2rem;
+  }
+
+  .main-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #00b4ff;
+    left: 0;
+    z-index: 10000;
+    padding: 2rem;
+  }
+
+  .main-nav .list {
+    width: 100%;
+    justify-content: space-around;
+    font-size: 700;
+    letter-spacing: 1px;
+  }
+
+  .list-item a:link,
+  .list-item a:visited {
+    color: #333 !important;
+  }
+
+  .logo {
+    height: 3.2rem;
+  }
+  .hero {
+    gap: 3rem;
+  }
+
+  .subheading {
+    text-align: center;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .section-products {
+    padding: 1rem;
+  }
+
+  .categories {
+    gap: 1rem;
+  }
+
+  .card--float-2 {
+    position: absolute;
+    top: 6.4rem;
+    width: calc(25% - 1rem + 2px);
+    height: calc(100% - 6.4rem);
+    transition: all 0.3s;
+    /* transform: translateX(calc(2 * 100% + 2rem)); x*100% + x*rem */
+  }
+
+  .heading-tertionary {
+    font-size: 1.2rem;
+  }
+
+  .best-this-month {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .special-card-header p {
+    font-size: 2.4rem;
+  }
+
+  .special--card img,
+  .best-this-month .card img {
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  .special--card {
+    grid-column: 1/-1;
+  }
+
+  .watches {
+    padding: 0 1rem;
+  }
+
+  .wathes-menu-list .list-item a:link {
+    font-size: 1.2rem;
+  }
+
+  .wathces-grid {
+    gap: 1rem;
+  }
+
+  .latest-blog {
+    padding: 2rem;
+  }
+
+  .brands {
+    padding: 2rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+  }
+
+  .call-to-action form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .call-to-action form input[type="email"] {
+    width: 100%;
+  }
+
+  .upper-footer {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    padding: 2rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .blog-card-float-2 {
+    position: absolute;
+    top: 3rem;
+  }
+}

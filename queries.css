@@ -110,15 +110,21 @@
     width: 50%;
   }
 
+  .section-products {
+    margin-top: 6rem;
+    padding: 0 4rem;
+  }
+
   .categories {
     position: relative;
     grid-template-columns: repeat(4, 1fr);
     overflow: hidden;
+    padding-top: 4rem;
   }
 
   .card--float {
     position: absolute;
-    top: 6.4rem;
+    top: 4rem;
     width: calc(25% - 4rem + 8px);
     height: calc(100% - 4rem);
     transition: all 0.3s;
@@ -140,12 +146,17 @@
     width: 50%;
   }
 
+  .watches {
+    margin-top: 6rem;
+  }
+
   .wathces-grid {
     margin-top: 3.5rem;
   }
 
-  .upper-footer {
-    gap: 3.5rem;
+  .latest-blog {
+    padding: 0 4rem;
+    margin-top: 6rem;
   }
 
   .blog-grid {
@@ -153,6 +164,7 @@
     padding-top: 3rem;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    padding-top: 4rem;
   }
 
   .blog-card-float {
@@ -160,6 +172,15 @@
     width: calc(50% - 4rem + 16px);
     transition: all 0.3s;
     bottom: 0;
+  }
+
+  .brands {
+    padding: 0 4rem;
+    margin-top: 6rem;
+  }
+
+  .upper-footer {
+    gap: 3.5rem;
   }
 }
 

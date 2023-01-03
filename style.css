@@ -45,6 +45,11 @@ body {
   background-color: #00b4ff;
 }
 
+.highlight {
+  color: #00b4ff !important;
+  font-weight: bold;
+}
+
 /**********************************************************************************************************************/
 
 /* HEADER */
@@ -294,7 +299,6 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.05);
   cursor: pointer;
 }
 

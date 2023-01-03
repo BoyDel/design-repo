@@ -11,6 +11,9 @@ const categoryRightArrow = document.querySelector(".right-arrow");
 const categoryLeftArrow = document.querySelector(".left-arrow");
 const blogRightArrow = document.querySelector(".latest-blog .right-arrow");
 const blogLeftArrow = document.querySelector(".latest-blog .left-arrow");
+const arrUp = document.querySelector(".arrow-up");
+const header = document.querySelector("header");
+const section = document.querySelector(".content");
 
 const n = productsArr.length;
 const n1 = blogArr.length;
@@ -57,8 +60,8 @@ heartItem.addEventListener("click", () => {
 if (window.matchMedia("(max-width: 592px)").matches) {
   let slideLeft = 0;
   let slideRight = 2;
-  let slideLeft1 = 0;
-  let slideRight1 = 2;
+  let slideLeft1 = 0; // left slider for blog section
+  let slideRight1 = 2; // right slider for blog section
 
   // Positioning second and third post
   for (let i = 0; i < 2; i++) {
@@ -156,3 +159,27 @@ const move = function (arr, ind, gap) {
     el.style.transform += `translateX(calc(${ind * 100}% + ${ind * gap}rem))`;
   });
 };
+
+// Smooth slide animation using intersectionObserver()
+
+const slideUp = function (entries) {
+  const [entrie] = entries;
+
+  if (entrie.isIntersecting) {
+    arrUp.classList.remove("opacity");
+  } else {
+    arrUp.classList.add("opacity");
+  }
+};
+
+const sectionObserver = new IntersectionObserver(slideUp, {
+  root: null,
+  threshold: 0.1,
+});
+
+sectionObserver.observe(section);
+
+arrUp.addEventListener("click", function () {
+  header.scrollIntoView({ behavior: "smooth" });
+  this.classList.remove("opacity");
+});

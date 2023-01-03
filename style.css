@@ -50,6 +50,10 @@ body {
   font-weight: bold;
 }
 
+.opacity {
+  opacity: 0;
+}
+
 /**********************************************************************************************************************/
 
 /* HEADER */
@@ -577,10 +581,6 @@ body {
     transform: scale(0);
   }
 
-  80% {
-    transform: scale(1.5);
-  }
-
   100% {
     transform: scale(1);
   }
@@ -644,4 +644,19 @@ body {
   flex-direction: column;
   list-style: none;
   font-size: 1.4rem;
+}
+
+/****************************************************************************/
+
+/*Arrow up*/
+
+/****************************************************************************/
+
+.arrow-up {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  padding: 2rem;
+  font-size: 2rem;
+  transition: all 0.3s;
 }

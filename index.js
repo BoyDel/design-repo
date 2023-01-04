@@ -14,6 +14,8 @@ const blogLeftArrow = document.querySelector(".latest-blog .left-arrow");
 const arrUp = document.querySelector(".arrow-up");
 const header = document.querySelector("header");
 const section = document.querySelector(".content");
+const userIcon = document.querySelector(".person-item");
+const userForm = document.querySelector(".login-form");
 
 const n = productsArr.length;
 const n1 = blogArr.length;
@@ -46,6 +48,9 @@ heartButtons.forEach((btn) => {
 });
 
 heartItem.addEventListener("click", () => {
+  userIcon.classList.remove("active");
+  userForm.style.width = "0";
+  userForm.style.height = "0";
   wishList.classList.toggle("active");
   if (wishList.classList.contains("active")) {
     const len = wishList.querySelectorAll("h1,p:not(:empty)").length;
@@ -182,4 +187,20 @@ sectionObserver.observe(section);
 arrUp.addEventListener("click", function () {
   header.scrollIntoView({ behavior: "smooth" });
   this.classList.remove("opacity");
+});
+
+// User icon event listener
+
+userIcon.addEventListener("click", () => {
+  heartItem.classList.remove("active");
+  wishList.style.height = 0;
+  wishList.style.width = 0;
+  userIcon.classList.toggle("active");
+  if (userIcon.classList.contains("active")) {
+    userForm.style.width = "20rem";
+    userForm.style.height = "16gitrem";
+  } else {
+    userForm.style.width = "0";
+    userForm.style.height = "0";
+  }
 });

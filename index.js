@@ -198,7 +198,7 @@ userIcon.addEventListener("click", () => {
   userIcon.classList.toggle("active");
   if (userIcon.classList.contains("active")) {
     userForm.style.width = "20rem";
-    userForm.style.height = "16gitrem";
+    userForm.style.height = "16rem";
   } else {
     userForm.style.width = "0";
     userForm.style.height = "0";

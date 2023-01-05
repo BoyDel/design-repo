@@ -181,6 +181,7 @@ body {
 .section-hero {
   position: relative;
   background-color: rgb(214, 236, 246);
+  margin-bottom: 9.6rem;
 }
 
 .hero {
@@ -250,7 +251,8 @@ body {
 /*********************************************************************************************************************/
 
 .section-products {
-  padding: 9.6rem;
+  padding: 0 9.6rem;
+  margin-bottom: 9.6rem;
 }
 
 .section-header {
@@ -411,6 +413,7 @@ body {
 
 .watches {
   padding: 0 9.6rem;
+  margin-bottom: 9.6rem;
 }
 
 .watches-header {
@@ -419,7 +422,7 @@ body {
   align-items: center;
 }
 
-.wathces-grid {
+.watches-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 4rem;
@@ -427,7 +430,7 @@ body {
   margin-top: 6.4rem;
 }
 
-.wathces-grid .card {
+.watches-grid .card {
   gap: 0;
 }
 
@@ -466,7 +469,7 @@ body {
   opacity: 1;
 }
 
-.wathces-grid .card .heading-tertionary {
+.watches-grid .card .heading-tertionary {
   text-transform: none;
 }
 
@@ -477,7 +480,8 @@ body {
 /*****************************************************/
 
 .latest-blog {
-  padding: 9.6rem;
+  padding: 0 9.6rem;
+  margin-bottom: 9.6rem;
 }
 
 .blog-grid {

@@ -62,6 +62,9 @@ heartItem.addEventListener("click", () => {
   }
 });
 
+// coming to 592px and 800px, page needs to be reloaded to arrange content properly
+// been tried window.addEventListener("resize", () => {}), havent worked
+
 if (window.matchMedia("(max-width: 592px)").matches) {
   let slideLeft = 0;
   let slideRight = 2;
